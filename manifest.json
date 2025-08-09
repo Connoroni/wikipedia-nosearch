@@ -1,0 +1,16 @@
+{
+  "name": "No Wikipedia Search",
+  "description": "Remove the search bar from Wikipedia for fun navigation",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "wiki.html",
+    "default_icon": "wiki.png"
+  },
+  "content_scripts": [
+    {
+      "js": ["extension.js"],
+      "matches": ["https://*.wikipedia.org/*"]
+    }
+  ]
+}
