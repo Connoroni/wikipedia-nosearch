@@ -5,12 +5,19 @@
   "manifest_version": 3,
   "action": {
     "default_popup": "wiki.html",
-    "default_icon": "wiki.png"
+    "default_icon": "./icons/wiki.png"
   },
   "content_scripts": [
     {
       "js": ["extension.js"],
       "matches": ["https://*.wikipedia.org/*"]
     }
-  ]
+  ],
+  "icons": {
+    "16": "./icons/wiki-16.png",
+    "32": "./icons/wiki-16.png",
+    "48": "./icons/wiki-16.png",
+    "96": "./icons/wiki-16.png",
+    "128": "./icons/wiki-16.png"
+  }
 }
